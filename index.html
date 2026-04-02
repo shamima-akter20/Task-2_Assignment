@@ -11,23 +11,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Book List</h2>
-    <input type="text" id="bookName" placeholder="Enter book name" />
-    <input type="text" id="authorName" placeholder="Enter author name" />
-    <button onclick="addBook()" id="saveBtn">Save</button>
+    <div class="container">
+      <h2>Book List</h2>
+      <div class="input-group">
+        <input type="text" id="bookName" placeholder="Enter book name" />
+        <input type="text" id="authorName" placeholder="Enter author name" />
+        <button onclick="addBook()" id="saveBtn">Save</button>
+      </div>
 
-    <table id="bookTable">
-      <thead>
-        <tr>
-          <th>Book Name</th>
-          <th>Author Name</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- dynamic -->
-      </tbody>
-    </table>
+      <table id="bookTable">
+        <thead>
+          <tr>
+            <th>Book Name</th>
+            <th>Author Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- dynamic -->
+        </tbody>
+      </table>
+    </div>
 
     <script src="./index.js"></script>
   </body>

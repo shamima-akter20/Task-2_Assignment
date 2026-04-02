@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f9fafb; /* light shade background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  transition:
+    border 0.3s,
+    box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 5px rgba(96, 165, 250, 0.4);
+}
+
+/* Save Button */
+#saveBtn {
+  padding: 12px 20px;
+  background-color: #60a5fa;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+#saveBtn:hover {
+  background-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #e0f2fe;
+  border-radius: 12px 12px 0 0;
+}
+
+thead th {
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #1e40af;
+}
+
+tbody tr {
+  transition: background-color 0.2s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+tbody td {
+  padding: 12px 15px;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* Delete Button */
+tbody button {
+  background-color: #f87171;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+tbody button:hover {
+  background-color: #ef4444;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input,
+  #saveBtn {
+    width: 100%;
+  }
+
+  tbody td {
+    font-size: 14px;
+  }
+}
